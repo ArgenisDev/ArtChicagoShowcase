@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304519567063",
+    "project_id": "artchicagoshowcase",
+    "storage_bucket": "artchicagoshowcase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304519567063:android:a07c199c1558c9b7a14292",
+        "android_client_info": {
+          "package_name": "com.artchicagoshowcase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXTFGzNorrADt7jw_AnEWDWkiVnQx_thc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,10 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import {Box, Text} from '@utils/components';
 
 export const FeedScreen = () => {
   return (
-    <View>
-      <Text>FeedScreen</Text>
-    </View>
-  )
-}
+    <Box flex={1} backgroundColor="mainBackground">
+      <Text variant="header" color="white">
+        hola
+      </Text>
+    </Box>
+  );
+};
