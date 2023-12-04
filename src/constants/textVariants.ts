@@ -18,19 +18,35 @@ export const textVariants = {
     fontFamily: 'Poppins-Bold',
     fontSize: normalize(24),
   },
-  'smallTitle-Light': {
+  'smallTitle-light': {
     fontFamily: 'Poppins-Light',
     fontSize: normalize(24),
   },
+  bigBody: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: normalize(20),
+  },
+  'bigBody-bold': {
+    fontFamily: 'Poppins-Bold',
+    fontSize: normalize(20),
+  },
+  'bigBody-light': {
+    fontFamily: 'Poppins-Light',
+    fontSize: normalize(20),
+  },
   body: {
     fontFamily: 'Poppins-Regular',
+    fontSize: normalize(16),
+  },
+  'body-medium': {
+    fontFamily: 'Poppins-Medium',
     fontSize: normalize(16),
   },
   'body-bold': {
     fontFamily: 'Poppins-Bold',
     fontSize: normalize(16),
   },
-  'body-Light': {
+  'body-light': {
     fontFamily: 'Poppins-Light',
     fontSize: normalize(16),
   },
@@ -38,11 +54,11 @@ export const textVariants = {
     fontFamily: 'Poppins-Regular',
     fontSize: normalize(12),
   },
-  'textBody-Bold': {
+  'textBody-bold': {
     fontFamily: 'Poppins-Bold',
     fontSize: normalize(12),
   },
-  'textBody-Light': {
+  'textBody-light': {
     fontFamily: 'Poppins-Light',
     fontSize: normalize(12),
   },
@@ -50,11 +66,11 @@ export const textVariants = {
     fontFamily: 'Poppins-Regular',
     fontSize: normalize(8),
   },
-  'smallText-Bold': {
+  'smallText-bold': {
     fontFamily: 'Poppins-Bold',
     fontSize: normalize(8),
   },
-  'smallText-Light': {
+  'smallText-light': {
     fontFamily: 'Poppins-Light',
     fontSize: normalize(8),
   },

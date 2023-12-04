@@ -1,0 +1,1 @@
+export { CardsFeed } from './CardsFeed';

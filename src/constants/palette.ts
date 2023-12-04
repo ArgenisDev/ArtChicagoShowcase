@@ -1,8 +1,6 @@
 export const palette = {
-  navyBlue: '#001F3F',
-  brightYellow: '#FFD700',
-  white: '#FFFFFF',
-  darkGray: '#333333',
-  coralRed: '#FF4040',
-  black: '#000',
+  black: '#060506',
+  pink: '#d7b8b7',
+  white: '#dedcdb',
+  red: '#f80000',
 };

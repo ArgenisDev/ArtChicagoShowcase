@@ -1,0 +1,1 @@
+export { feedStrings } from './feed';

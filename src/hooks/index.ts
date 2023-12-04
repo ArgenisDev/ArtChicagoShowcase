@@ -1,0 +1,1 @@
+export { useGetDataArtic } from './useGetDataArtic';
