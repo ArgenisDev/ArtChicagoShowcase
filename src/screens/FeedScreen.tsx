@@ -5,6 +5,7 @@ import {useGetDataArtic} from '@hooks/index';
 import {FlatList} from 'react-native';
 import {CardsFeed} from 'src/components/feed/Cards';
 import {normalize} from '@utils/functions';
+import {Skeleton} from 'src/components/Skeleton';
 
 export const FeedScreen = () => {
   const {data} = useGetDataArtic();
@@ -14,6 +15,7 @@ export const FeedScreen = () => {
         <Text variant="header" color="pink" mt="xxxs">
           {feedStrings.title}
         </Text>
+        {!data && <Skeleton />}
         <FlatList
           data={data}
           renderItem={({item}) => <CardsFeed item={item} />}

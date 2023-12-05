@@ -1,3 +1,4 @@
+import {IMAGE_NOT_FOUND} from '@constants/env';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {Text, TouchableComponent} from '@utils/components';
 import {getImageDataArtic, normalize, removeHTML} from '@utils/functions';
@@ -12,6 +13,9 @@ interface CardsFeedProps {
 export const CardsFeed = ({item}: CardsFeedProps) => {
   const {navigate} = useNavigation<NavigationProp<RootStackParamList>>();
   const goToDetail = () => navigate('Home', {screen: 'Detail', params: {item}});
+  const uriImage = item.image_id
+    ? getImageDataArtic(item.image_id)
+    : IMAGE_NOT_FOUND;
   const description =
     removeHTML(item.description) ?? item.title ?? feedStrings.no_description;
   return (
@@ -25,7 +29,9 @@ export const CardsFeed = ({item}: CardsFeedProps) => {
       activeOpacity={1}
       onPress={goToDetail}>
       <Image
-        source={{uri: getImageDataArtic(item.image_id)}}
+        source={{
+          uri: uriImage,
+        }}
         style={{width: normalize(100), height: normalize(80), borderRadius: 10}}
         resizeMode="cover"
       />
