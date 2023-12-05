@@ -11,7 +11,7 @@ interface CardsFeedProps {
 }
 export const CardsFeed = ({item}: CardsFeedProps) => {
   const {navigate} = useNavigation<NavigationProp<RootStackParamList>>();
-  const goToDetail = () => navigate('Detail', {item});
+  const goToDetail = () => navigate('Home', {screen: 'Detail', params: {item}});
   const description =
     removeHTML(item.description) ?? item.title ?? feedStrings.no_description;
   return (

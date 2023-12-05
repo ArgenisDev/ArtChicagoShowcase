@@ -491,6 +491,8 @@ PODS:
     - FirebaseCoreExtension (= 10.18.0)
     - React-Core
     - RNFBApp
+  - RNPermissions (4.0.0):
+    - React-Core
   - RNReanimated (3.6.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
@@ -548,6 +550,7 @@ DEPENDENCIES:
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
+  - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -655,6 +658,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBMessaging:
     :path: "../node_modules/@react-native-firebase/messaging"
+  RNPermissions:
+    :path: "../node_modules/react-native-permissions"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -719,12 +724,13 @@ SPEC CHECKSUMS:
   RNCAsyncStorage: 618d03a5f52fbccb3d7010076bc54712844c18ef
   RNFBApp: 3d518e0ea7f945ae546facc0e6034806d9ddfde7
   RNFBMessaging: 5c909e97a0c81c4a03c56ca17f0fe79256941ec9
+  RNPermissions: 64b3f207e0f509b82097ce139e93568ac53a8d4b
   RNReanimated: 8a6a83984cb4d61ebf1065b6137150b6b31ce609
   RNScreens: 3e56c56bd35436215a56f48a753e30e8ce018a09
   RNSVG: 255767813dac22db1ec2062c8b7e7b856d4e5ae6
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 4c3aa327e4a6a23eeacd71f61c81df1bcdf677d5
 
-PODFILE CHECKSUM: 71c4754466940107e55f04100e37890a8a40f690
+PODFILE CHECKSUM: a7869ef143efbb38301f882e732b1eabbff8b1f3
 
 COCOAPODS: 1.14.3

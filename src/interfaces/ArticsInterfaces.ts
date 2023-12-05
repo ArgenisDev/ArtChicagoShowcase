@@ -4,6 +4,12 @@ export interface ArticsInterface {
   info: Info;
   config: Config;
 }
+export interface ArticsInterfaceById {
+    pagination: Pagination;
+    data: DataArtics;
+    info: Info;
+    config: Config;
+  }
 
 export interface Pagination {
   total: number;

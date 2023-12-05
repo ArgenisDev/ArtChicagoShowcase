@@ -1,4 +1,5 @@
-export { Box } from './Box';
-export { Text } from './Text';
-export { TouchableComponent } from './TouchableBox'
-export { WrapperComponent } from './WrapperComponent'
+export {Box} from './Box';
+export {Text} from './Text';
+export {TouchableComponent} from './TouchableBox';
+export {WrapperComponent} from './WrapperComponent';
+export {Input} from './Input';

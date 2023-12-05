@@ -9,8 +9,9 @@ import {ThemeProvider} from '@shopify/restyle';
 import {colors, theme} from '@constants/index';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import * as Icon from 'phosphor-react-native';
-import {FeedScreen, DetailScreen} from '@screens/index';
+import {FeedScreen, DetailScreen, AccountScreen} from '@screens/index';
 import {RootStackParamList} from 'src/interfaces';
+import {FavouritesScreen} from '@screens/FavouritesScreen';
 
 export const Navigation = () => {
   const Tab = createBottomTabNavigator();
@@ -47,8 +48,8 @@ export const Navigation = () => {
                 ),
                 tabBarShowLabel: false,
               }}
-              name="Feed"
-              component={FeedScreen}
+              name="Favourites"
+              component={FavouritesScreen}
             />
             <Tab.Screen
               options={{
@@ -57,8 +58,8 @@ export const Navigation = () => {
                 ),
                 tabBarShowLabel: false,
               }}
-              name="Feed2"
-              component={FeedScreen}
+              name="Account"
+              component={AccountScreen}
             />
           </Tab.Navigator>
         </NavigationContainer>
@@ -71,7 +72,14 @@ const FeedNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Feed" component={FeedScreen} />
-      <Stack.Screen name="Detail" component={DetailScreen} />
+      <Stack.Screen
+        name="Detail"
+        component={DetailScreen}
+        options={{
+          presentation:'modal',
+          animation: 'fade',
+        }}
+      />
     </Stack.Navigator>
   );
 };
