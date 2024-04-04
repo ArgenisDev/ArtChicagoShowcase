@@ -1,79 +1,62 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Art Institute Of Chicago Catalog App
 
-# Getting Started
+This React Native app allows users to explore events from the Art Institute of Chicago. Users can view thumbnails and brief descriptions of events on the main screen and access detailed information by clicking on an event. The app supports saving favorite artworks and exploring them offline.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Getting Started
 
-## Step 1: Start the Metro Server
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Prerequisites
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- Node.js (v14 or newer)
+- React Native CLI
+- Xcode or Android Studio, depending on your target platform (iOS or Android)
+- An API key for the Art Institute of Chicago API
 
+### Installing
+
+1. Clone the repository:
 ```bash
-# using npm
-npm start
+git clone <repository-url>
+Install dependencies:
+bash
+Copy code
+cd <project-directory>
+npm install
+Set up your environment:
 
-# OR using Yarn
-yarn start
-```
+Create a .env file at the root of your project.
+Add your Art Institute of Chicago API key: API_KEY=<your-api-key>
+Start the app:
 
-## Step 2: Start your Application
+For iOS:
+bash
+Copy code
+npx react-native run-ios
+For Android:
+bash
+Copy code
+npx react-native run-android
+Features
+Browse event thumbnails and descriptions from the Art Institute of Chicago.
+View detailed information about events, including high-quality images and author details.
+Save favorite artworks for offline viewing.
+Animated transitions and other advanced UI/UX features.
+(Optional) Push notifications for new or upcoming events.
+Native Module integration for adding events to the user's calendar (iOS/Android).
+Built With
+React Native CLI - The framework used
+Typescript - Language
+Your Other Dependencies
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Versioning
+We use SemVer for versioning. For the versions available, see the [tags on this repository](<repository-url>/tags).
 
-### For Android
+Authors
+Your Name - Initial work
+See also the list of [contributors](<repository-url>/contributors) who participated in this project.
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details
